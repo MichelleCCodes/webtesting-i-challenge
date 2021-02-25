@@ -1,22 +1,12 @@
 # Unit Testing Module Project
 
-## Instroduction
+## Introduction
 
 In this project, you will **write unit tests and the implementation code** for a module that helps players see the results of a _success_ or _failure_ when trying to enhance their in-game items. The requirements are listed under the _Minimum Viable Product_ section below.
 
 ## Instructions
 
-### Task 1: Set Up The Project With Git
-
-Follow these steps to set up and work on your project:
-
-- [ ] Create a forked copy of this project.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push -u origin `<firstName-lastName>`.
-
-### Task 2: Minimum Viable Product
+### Minimum Viable Product
 
 After a set of interviews with the potential users of the solution, we gathered the following information about the functionality of the game's enhancing system. Your job is to add tests to `./enhancing/enhancer.spec.js` and code to `./enhancing/enhancer.js` to implement the requirements; `./enhancing/enhancer.js` exports an object that has the following methods:
 
@@ -44,16 +34,6 @@ The following sections list information provided by the client about `items` and
 - If the item's enhancement is less than 15, the durability of the item is decreased by 5.
 - If the item's enhancement is 15 or more, the durability of the item is decreased by 10.
 - If the item's enhancement level is greater than 16, the enhancement level decreases by 1 (17 goes down to 16, 18 goes down to 17).
-
-### Task 3: Stretch Goals
-
-This section is **optional** and not counted towards MVP. Start working on it after you're done with the main assignment.
-
-- Add a `get()` method to the `enhancer` object that takes an `item` and **returns a new item** with the `name` property modified according to the following rules:
-  - if the enhancement level is 0, the the name is not modified.
-  - if the enhancement level is greater than 0, change the name to include the enhancement level, preceded by a plus sign ( + ), between square brackets before the item's name. Example: the name of a "Iron Sword" enhanced to 7 would be "[+7] Iron Sword".
-- Design and build a Web Application to test the enhancing module you implemented for the MVP.
-- Work on [this repository for extra practice testing JavaScript Functions](https://github.com/LambdaSchool/Testing).
 
 ## Submission format
 
